@@ -15,6 +15,7 @@
 
 
 <body <?php body_class(); ?>>
+  <div class="preloader"></div>
 
 <header>
   <div class="container">

@@ -29,6 +29,10 @@ function addOnScroll() {
 
 $(function() { 
 
+    $(window).load(function() {
+       $('.preloader').fadeOut('slow');
+    });
+
     addOnScroll();
 
 	$('a[href*="#"]:not([href="#"])').click(function() {
