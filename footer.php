@@ -1,7 +1,16 @@
 <footer>
-  <div class="container">
-    <p>&copy; HackerYou <?php echo date('Y'); ?></p>
-  </div>
+	<div class="container">
+		<h6>Social Media</h6>
+		<?php wp_nav_menu( array(
+		  'container' => false,
+		  'theme_location' => 'secondary'
+		)); ?>
+		<p>&copy;2016 Coded with <i class="fa fa-heart" aria-hidden="true"></i> by Ilana Solomons</p>
+		<p>Email: <a href="mailto:ilana@ilanalily.ca">ilana@ilanalily.ca</a></p>
+		<p>Headshot by <a href="http://pamlau.com/">Pam Lau</a></p>
+	</div>
+
+
 </footer>
 
 <script>

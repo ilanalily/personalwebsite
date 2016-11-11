@@ -1,3 +1,53 @@
 footer {
 	clear: both;
+	background-color: $darkGrey;
+	color: white;
+	padding: 20px;
+	p {
+		margin-bottom: 0;
+		margin-top: 5px;
+		font-size: 10px;
+	}
+	h6 {
+		margin-bottom: 10px;
+	}
+	.container {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		align-items: center;
+		ul {
+			border-bottom: 1px solid #505050;
+			width: 100%;
+			display: flex;
+			justify-content: center;
+			margin-bottom: 30px;
+			padding-bottom: 30px;
+		}
+		li {
+			width: 35px;
+			height: 35px;
+			background-color: $blue;
+			border-radius: 50%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin: 10px;
+			&:hover {
+				background-color: white;
+			}
+			&:hover i {
+				color: $blue;
+			}
+			a {
+				padding: 7px;
+				margin-left: 5px;
+				margin-right: 5px;
+				i {
+					font-size: 18px;
+					transition: ease all .3s;
+				}
+			}
+		}
+	}
 }

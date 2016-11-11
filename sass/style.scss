@@ -10,6 +10,11 @@
 @import 'normalize';
 @import 'typography';
 @import 'navigation';
+@import 'hero';
+@import 'about';
+@import 'skills';
+@import 'portfolio';
+@import 'contact';
 @import 'sidebar';
 @import 'comments';
 @import 'footer';
@@ -24,23 +29,66 @@ img {
 }
 
 body {
-	color: #333;
+	color: $darkGrey;
+	background-color: $lightGrey;
 }
 
+
+
 .container {
-	max-width: 1200px;
+	width: 70%;
 	margin: 0 auto;
 }
 
-.content {
-	float: left;
-	width: 65%;
-	margin-right: 5%;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: $headerText;
 }
 
-.full {
-	width: 100%;
+h1 {
+	font-size: 50px;
+	margin-bottom: 10px;
 }
+
+h3, h6 {
+	text-transform: uppercase;
+	letter-spacing: 2.5;
+}
+
+p {
+	font-family: $bodyText;
+}
+
+
+.hero {
+	.top_bar_opaque {
+		opacity: 0;
+	}
+}
+
+.hero {
+	.top_bar_scroll {
+		position: fixed;
+		opacity: 1;
+		width: 100%;
+		padding-left: 80px;
+		padding-right: 80px;
+		padding-top: 0;
+		z-index: 100;
+		background-color: rgba(0,0,0,.5);
+		display: flex;
+		h2 {
+			color: $lightGrey;
+		}
+	}
+}
+
+
+
 
 
 

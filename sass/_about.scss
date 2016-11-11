@@ -1,0 +1,48 @@
+.about {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 0% 60%;
+	.about_overlay {
+		background-color: rgba(51,50,55,.7);
+	}
+	h4 {
+		margin: 0 0 20px;
+		position: relative;
+		font-size: 30px;
+		color: $lightGrey;
+		&:after {
+			content: " ";
+			width: 100%;
+			height: 1px;
+			background-color: $lightGrey;
+			display: block;
+			position: absolute;
+			top: 50%;
+			left: 160px;
+
+		}
+	}
+	.content {
+		display: flex;
+		padding-top: 50px;
+		padding-bottom: 50px;
+		.about_me_image {
+			width: 50%;
+			z-index: 10;
+			img {
+				border: 3px solid $lightGrey;
+			}
+			
+		}
+		.about_me_text {
+			width: calc(50% - 90px);
+			margin-right: 50px;
+			font-weight: 400;
+			font-size: 15px;
+			margin-top: 15px;
+			color: $lightGrey;
+			line-height: 1.1px;
+			letter-spacing: .5px;
+		}
+	}
+}
