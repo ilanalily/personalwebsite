@@ -10,11 +10,39 @@
 			width: 90%;
 		}
 	}
+	.hero {
+		background-attachment: scroll;
+		h1 {
+			margin-top: 10px;
+		}
+		p {
+			margin: 5px;
+		}
+		.hero_content {
+			i {
+				margin-top: 10px;
+			}
+		}
+	}
 }
 
 @media (max-width: 900px) {
-	.hero {
-		background-attachment: scroll;
+	.portfolio {
+		.portfolio_text {
+			width: 100%;
+			padding: 0;
+		}
+		.portfolio_image {
+			width: 100%;
+		}
+	}
+	.portfolio_piece {
+		&:nth-child(even) {
+			.portfolio_text {
+				padding: 0;
+			}
+		}
+		margin-bottom: 60px;
 	}
 }
 
@@ -60,9 +88,30 @@
 			.about_me_text {
 				width: calc(60% - 20px);
 				margin-right: 20px;
+				h4 {
+					margin-bottom: 30px;
+				}
 				p {
 					font-size: 13px;
+					margin-bottom: 30px;
 				}
+			}
+		}
+	}
+	.contact {
+		.container {
+			.contact_form {
+				width: 70%;
+			}
+		}
+	}
+	footer {
+		padding: 0;
+		padding-bottom: 20px;
+		.container {
+			ul {
+				margin-bottom: 10px;
+				padding-bottom: 10px;
 			}
 		}
 	}
@@ -86,6 +135,12 @@
 			}
 		}
 	}
+	.skills {
+		padding-bottom: 25px;
+		.content {
+			margin-top: 50px;
+		}
+	}
 }
 
 @media (max-width: 600px){
@@ -98,6 +153,19 @@
 				width: 85%;
 			}
 		}
+	}
+	.contact {
+		.container {
+			.contact_form {
+				width: 85%;
+			}
+		}
+	}
+}
+
+@media (max-height: 450px) {
+	.hero {
+
 	}
 }
 

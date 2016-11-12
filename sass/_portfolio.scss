@@ -46,6 +46,7 @@
 .portfolio_piece {
 	display: flex;
 	margin-bottom: 50px;
+	flex-wrap: wrap;
 	&:nth-child(even) {
 		flex-direction: row-reverse;
 		.portfolio_text {

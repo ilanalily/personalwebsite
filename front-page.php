@@ -5,7 +5,7 @@
 $heroImage = get_field('hero_image');
 ?>
 
-<div class="hero" style="background-image:url(<?php echo $heroImage['url']; ?>)" id="home">
+<section class="hero" style="background-image:url(<?php echo $heroImage['url']; ?>)" id="home">
 	<div class="overlay">
 			<div class="top_bar">
 				<h2>IL.</h2>
@@ -25,10 +25,10 @@ $heroImage = get_field('hero_image');
 			</div>
 		</div>
 	</div>
-</div> <!--close hero section -->
+</section> <!--close hero section -->
 
 
-<div class="portfolio" id="portfolio">
+<section class="portfolio" id="portfolio">
 	<div class="container">
 		<h3>portfolio</h3>
 		<div class="portfolio_container">
@@ -76,10 +76,10 @@ $heroImage = get_field('hero_image');
 			<?php wp_reset_postdata(); ?>
 		</div> <!-- end portfolio_container -->
 	</div> <!-- end container -->
-</div> <!-- end portfolio -->
+</section> <!-- end portfolio -->
 
 
-<div class="skills" id="skills">
+<section class="skills" id="skills">
 	<div class="container">
 		<div class="content">
 			<h3>Skills</h3>
@@ -100,13 +100,13 @@ $heroImage = get_field('hero_image');
 			<?php endif; ?>
 		</div>
 	</div>
-</div>
+</section>
 
 	
 <?php 
 $aboutImage = get_field('about_background')
  ?>	
-<div class="about" id="about" style="background-image:url(<?php echo $aboutImage['url']; ?>)">
+<section class="about" id="about" style="background-image:url(<?php echo $aboutImage['url']; ?>)">
 	<div class="about_overlay">
 		<div class="container">
 			<div class="content">
@@ -121,11 +121,11 @@ $aboutImage = get_field('about_background')
 			</div>
 		</div> 
 	</div>
-</div> <!-- close about section -->
+</section> <!-- close about section -->
 
 
 
-<div class="contact" id="contact">
+<section class="contact" id="contact">
 	<div class="container">
 		<h3>Let's get creating</h3>
 		<div class="contact_form">
@@ -134,7 +134,7 @@ $aboutImage = get_field('about_background')
 			<?php endwhile;?>
 		</div>
 	</div>
-</div> <!--close contact -->
+</section> <!--close contact -->
 
 
 
