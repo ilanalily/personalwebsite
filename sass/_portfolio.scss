@@ -45,10 +45,12 @@
 
 .portfolio_piece {
 	display: flex;
-	// align-items: center;
 	margin-bottom: 50px;
 	&:nth-child(even) {
 		flex-direction: row-reverse;
+		.portfolio_text {
+			padding-right: 25px;
+		}
 	}
 }
 
@@ -62,8 +64,8 @@
 
 .portfolio_text {
 	background-color: $lightGrey;
-	padding: 10px 25px 35px;
 	width: 50%;
+	padding-left: 25px;
 	p {
 		font-size: 12px;
 		color: #757575;

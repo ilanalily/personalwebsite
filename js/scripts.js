@@ -2,7 +2,7 @@
 function addOnScroll() {
         //this is an event handler for the window object
         $(window).scroll(function(){
-            console.log('hi')
+
             //EVERYTHING in here runs as soon as a scroll is detected
             // 1. this variable stores the distance from the top of the window
             var scrollDistance = $(window).scrollTop(); //returns a value equal to the distance from the top
@@ -32,6 +32,19 @@ $(function() {
     $(window).load(function() {
        $('.preloader').fadeOut('slow');
     });
+
+     //hamburger menu JS
+        $('#menu-icon').on('click', function(){
+            $('.nav-header').toggleClass('show-menu');
+            $(this).toggleClass('fa-times fa-bars');
+        });
+
+        $('.nav-header a').on('click', function(){
+            console.log('hey');
+            console.log('before');
+            $('.nav-header').removeClass('show-menu');
+            $('#menu-icon').toggleClass('fa-times fa-bars');
+        });
 
     addOnScroll();
 

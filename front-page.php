@@ -9,11 +9,13 @@ $heroImage = get_field('hero_image');
 	<div class="overlay">
 			<div class="top_bar">
 				<h2>IL.</h2>
-				<?php wp_nav_menu( array(
-				  'container' => false,
-				  'theme_location' => 'primary'
-				)); ?>
-				
+				<div id="menu-icon" class="fa fa-bars fa-2x"></div>
+				<div class="nav-header">
+					<?php wp_nav_menu( array(
+					  'container' => false,
+					  'theme_location' => 'primary'
+					)); ?>
+				</div>
 			</div>
 		<div class="container">
 			<div class="hero_content">
