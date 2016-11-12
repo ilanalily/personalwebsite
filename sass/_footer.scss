@@ -33,6 +33,7 @@ footer {
 			justify-content: center;
 			align-items: center;
 			margin: 10px;
+			transition: ease color .5s;
 			&:hover {
 				background-color: white;
 			}
@@ -45,7 +46,6 @@ footer {
 				margin-right: 5px;
 				i {
 					font-size: 18px;
-					transition: ease all .3s;
 				}
 			}
 		}
