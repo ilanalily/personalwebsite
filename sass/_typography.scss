@@ -5,6 +5,16 @@ $blue: #67BACC;
 $darkGrey: #333237;
 $lightGrey: #F5F5F5;
 
+.main_404 {
+	.container {
+		a {
+			&:hover {
+				color: $darkGrey;
+			}
+		}
+	}
+}
+
 
 a {
 	color: $blue;

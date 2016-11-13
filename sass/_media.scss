@@ -134,6 +134,9 @@
 			}
 		}
 	}
+}
+
+@media (max-width: 550px) {
 	.nav-header {
 		display: none;
 		z-index: 10;
@@ -167,14 +170,8 @@
 		padding: 0;
 		font-size: 13px;
 	}
+
 }
-
-@media (max-height: 450px) {
-	.hero {
-
-	}
-}
-
 
 
 
