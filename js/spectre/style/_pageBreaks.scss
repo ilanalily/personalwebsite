@@ -1,0 +1,36 @@
+.page-break {
+	width: 35%;
+	margin: 0 auto;
+	text-align: center;
+	padding-top: 60px;
+	padding-bottom: 50px;
+	h5 {
+		font-family: "Open Sans";
+		color: $lightgrey;
+	}
+}
+
+h2 {
+	font-family: "Uni Sans Heavy";
+	text-transform: uppercase;
+	color: $black;
+	position: relative;
+	&::after {
+			content: " ";
+		    height: 2px;
+		    width: 40px;
+		    margin: 0 auto;
+		    background: $red;
+		    bottom: -10px;
+		    left: 50%;
+		    transform: translateX(-50%);
+		    position: absolute;
+		}
+}
+
+@media (max-width: 600px) {
+	.page-break {
+		width: 65%;
+	}
+}
+

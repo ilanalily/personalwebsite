@@ -59,16 +59,16 @@ $(function() {
     });
 
      //hamburger menu JS
-        $('#menu-icon').on('click', function(){
+        $('.hamburger').on('click', function(){
             $('.nav-header').toggleClass('show-menu');
-            $(this).toggleClass('fa-times fa-bars');
+            $(this).toggleClass('is-active');
         });
 
         $('.nav-header a').on('click', function(){
-            console.log('hey');
-            console.log('before');
-            $('.nav-header').removeClass('show-menu');
-            $('#menu-icon').toggleClass('fa-times fa-bars');
+            if ($('.nav-header').hasClass('show-menu')) {
+                $('.nav-header').removeClass('show-menu');
+                $('.hamburger').toggleClass('is-active');
+            }
         });
 
     addOnScroll();

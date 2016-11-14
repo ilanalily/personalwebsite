@@ -9,6 +9,7 @@
 
 @import 'normalize';
 @import 'typography';
+@import 'hamburger';
 @import 'navigation';
 @import 'hero';
 @import 'about';
@@ -16,7 +17,6 @@
 @import 'portfolio';
 @import 'contact';
 @import 'sidebar';
-@import 'comments';
 @import 'footer';
 
 /*
@@ -102,7 +102,7 @@ p {
 }
 
 
-#menu-icon {
+.hamburger {
 	display: none;
 }
 

@@ -144,9 +144,13 @@
 		background-color: rgba(0,0,0,.75);
 		margin-top: 120px;
 	}
-	#menu-icon {
+	.hamburger {
 		display: inline-block;
 		color: $lightGrey;
+		outline: 0;
+		span {
+			color: $lightGrey;
+		}
 	}
 	.show-menu {
 		display: inline-block;

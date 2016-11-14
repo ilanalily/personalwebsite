@@ -9,6 +9,7 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Raleway:200,400,700" rel="stylesheet">
   <link href='//cdn.jsdelivr.net/devicons/1.8.0/css/devicons.min.css' rel='stylesheet'>
   <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
+  <link href="dist/hamburgers.css" rel="stylesheet">
   <!-- stylesheets should be enqueued in functions.php -->
   <?php wp_head(); ?>
 </head>

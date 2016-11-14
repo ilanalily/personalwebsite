@@ -9,7 +9,12 @@ $heroImage = get_field('hero_image');
 	<div class="overlay">
 			<div class="top_bar">
 				<h2>IL.</h2>
-				<div id="menu-icon" class="fa fa-bars fa-2x"></div>
+				<!-- <div id="menu-icon" class="fa fa-bars fa-2x"></div> -->
+				<button class="hamburger hamburger--collapse" type="button">
+				  <span class="hamburger-box">
+				    <span class="hamburger-inner"></span>
+				  </span>
+				</button>
 				<div class="nav-header">
 					<?php wp_nav_menu( array(
 					  'container' => false,
