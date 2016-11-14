@@ -1,4 +1,8 @@
 
+// var aboutTop = $('.about').offset().top; --cleaner way to do the about transitions,
+//instead of having to create multiple variables
+
+
 function addOnScroll() {
         //this is an event handler for the window object
         $(window).scroll(function(){
@@ -27,6 +31,27 @@ function addOnScroll() {
         })
     }
 
+function aboutTransition() {
+    $(window).on('scroll', function(){
+        var heroHeight = $('.hero').height();
+        var portfolioHeight = $('.portfolio').height();
+        var skillsHeight = $('.skills').height();
+        var totalHeight = (heroHeight + portfolioHeight + skillsHeight);
+        console.log(totalHeight, 'total height');
+        console.log($(this).scrollTop(), 'scrolltop');
+        if ($(this).scrollTop() > (totalHeight - 80)){
+            $('.about_me_image').css({
+                'right': '0',
+            });
+
+            $('.about_me_text').css({
+                'left': '0',
+            })
+        }
+    })
+}
+
+
 $(function() { 
 
     $(window).load(function() {
@@ -47,6 +72,8 @@ $(function() {
         });
 
     addOnScroll();
+
+    aboutTransition();
 
 	$('a[href*="#"]:not([href="#"])').click(function() {
         if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -77,4 +104,6 @@ $(function() {
 	});
 
 });
+
+
 

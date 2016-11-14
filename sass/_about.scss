@@ -22,7 +22,7 @@
 
 		}
 	}
-	.content {
+	.about_content {
 		display: flex;
 		flex-wrap: wrap;
 		padding-top: 50px;
@@ -33,6 +33,9 @@
 		.about_me_image {
 			width: 50%;
 			z-index: 10;
+			position: relative;
+			right: -700px;
+			transition: right .8s ease;
 			img {
 				border: 3px solid $lightGrey;
 			}
@@ -47,6 +50,9 @@
 			color: $lightGrey;
 			line-height: 1.1px;
 			letter-spacing: .5px;
+			position: relative;
+			left: -730px;
+			transition: left .8s ease;
 		}
 	}
 }

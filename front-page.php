@@ -109,7 +109,7 @@ $aboutImage = get_field('about_background')
 <section class="about" id="about" style="background-image:url(<?php echo $aboutImage['url']; ?>)">
 	<div class="about_overlay">
 		<div class="container">
-			<div class="content">
+			<div class="about_content">
 				<div class="about_me_text">
 					<h4>Hey there</h4>
 					<p><?php the_field('about_me') ?></p>

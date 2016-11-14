@@ -48,7 +48,7 @@
 
 @media(max-width: 800px){
 	.about {
-		.content {
+		.about_content {
 			.about_me_image {
 				width: 40%;
 			}
@@ -92,7 +92,7 @@
 				display: none;
 			}
 		}
-		.content {
+		.about_content {
 			.about_me_text {
 				width: 70%;
 				text-align: center;
@@ -118,7 +118,7 @@
 
 @media (max-width: 600px){
 	.about {
-		.content {
+		.about_content {
 			.about_me_image {
 				width: 65%;
 			}
