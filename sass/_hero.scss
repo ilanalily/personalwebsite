@@ -51,6 +51,29 @@
 	}
 }
 
+.hero {
+	.top_bar_opaque {
+		opacity: 0;
+	}
+}
+
+.hero {
+	.top_bar_scroll {
+		position: fixed;
+		opacity: 1;
+		width: 100%;
+		padding-left: 80px;
+		padding-right: 80px;
+		padding-top: 0;
+		z-index: 100;
+		background-color: rgba(0,0,0,.5);
+		display: flex;
+		h2 {
+			color: $lightGrey;
+		}
+	}
+}
+
 @keyframes bounce{
 	0% {
 		top: 15px;
