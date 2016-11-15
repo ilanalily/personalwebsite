@@ -73,7 +73,7 @@ $heroImage = get_field('hero_image');
 						</div>
 
 						<?php the_content(); ?>
-						<a href="<?php the_field('link_button') ?>"><?php the_field('link_text') ?></a>
+						<a href="<?php the_field('link_button') ?>" target="_blank"><?php the_field('link_text') ?></a>
 					</div>
 				</div>
 			<?php endwhile; ?>
