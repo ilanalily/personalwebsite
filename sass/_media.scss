@@ -24,6 +24,18 @@
 			}
 		}
 	}
+	.about {
+		.about_content {
+			.about_me_image {
+				position: static;
+				right: 0;
+			}
+			.about_me_text {
+				position: static;
+				left: 0;
+			}
+		}
+	}
 }
 
 @media (max-width: 900px) {
